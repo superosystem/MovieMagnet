@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+
 	"github.com/gusrylmubarok/golang-web/handler"
 )
 
@@ -11,10 +12,8 @@ func main() {
 
 	mux.HandleFunc("/", handler.HomeHandler)
 	mux.HandleFunc("/about", handler.AboutHandler)
-	mux.HandleFunc("/skills", handler.SkillsHandler)
-	mux.HandleFunc("/projects", handler.ProjectsHandler)
-	mux.HandleFunc("/contact", handler.ContactHandler)
-
+	mux.HandleFunc("/product", handler.ProductHandler)
+	
 	log.Println("Starting WEB on port 8080")
 
 	err := http.ListenAndServe(":8080", mux)
