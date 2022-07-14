@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/gusrylmubarok/sample-bank-golang/blob/main/documentation/banking-money-svgrepo-com.svg">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/gusrylmubarok/golang-bank-api/blob/main/documentation/banking-money-svgrepo-com.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Sample Bank Golang</h3>
@@ -56,8 +56,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
 Here's why:
@@ -81,10 +79,12 @@ This Development Application use tools :
 * PostgreSQL
 * Docker
 * Make
+* [Migrate](https://github.com/golang-migrate/migrate)
+* [SQLC](https://docs.sqlc.dev/en/latest/index.html)
 
 And Dependecy use :
 * [GORM](https://github.com/go-gorm/gorm)
-* [Migrate](https://github.com/golang-migrate/migrate)
+
 
 
 #### Development
@@ -103,6 +103,14 @@ migrate create -ext sql -dir db/migration -seq init_schema
 * Run Migration
 ```bash
 migrate -path db/migration -database "postgresql://admin:DZg2JVG2K7NQ7kW0XEUx@localhost:5432/simple_bank?sslmode=disable" -verbose up
+```
+* Initialize Sqlc
+```bash
+sqlc init
+```
+* Generate Sqlc
+```bash
+sqlc generate
 ```
 
 
