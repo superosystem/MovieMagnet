@@ -7,15 +7,15 @@ services:
     restart: always
     environment:
       POSTGRES_DB: 'simple_bank'
-      POSTGRES_USER: 'admin'
-      POSTGRES_PASSWORD: 'DZg2JVG2K7NQ7kW0XEUx'
+      POSTGRES_USER: '${DB_USERNAME}'
+      POSTGRES_PASSWORD: '${DB_PASSWD}'
       PGDATA: '/var/lib/postgresql/data/pgdata'
     ports:
       - '5432:5432'
     expose:
       - '5432'
     volumes:
-      - "${PWD}/my_db:/var/lib/postgresql/data"
+      - pgdb:/var/lib/postgresql/data
 
 volumes:
-  my_db:
+  pgdb:
