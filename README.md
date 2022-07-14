@@ -75,26 +75,37 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This Development Application use :
+This Development Application use tools :
 
-* Go Laguage
-* Gin Framework
+* [Go Language](https://go.dev/)
 * PostgreSQL
 * Docker
+* Make
+
+And Dependecy use :
+* [GORM](https://github.com/go-gorm/gorm)
+* [Migrate](https://github.com/golang-migrate/migrate)
+
 
 #### Development
-* Run Database Docker Container
+* Run Database Docker Compose
 ```bash
-docker run --name postgres14 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:14
-```
-* Access Database Console 
-```bash
-docker exec -it postgres14 psql -U root
+docker-compose up
 ```
 * View Container Logs
 ```bash
-docker logs postgres14
+docker logs golang-bank-api
 ```
+* Migration Database with [golang-migrate](https://github.com/golang-migrate/migrate)
+```bash
+migrate create -ext sql -dir db/migration -seq init_schema
+```
+* Run Migration
+```bash
+migrate -path db/migration -database "postgresql://admin:DZg2JVG2K7NQ7kW0XEUx@localhost:5432/simple_bank?sslmode=disable" -verbose up
+```
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
