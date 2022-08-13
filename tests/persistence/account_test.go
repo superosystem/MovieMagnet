@@ -1,4 +1,4 @@
-package db
+package testing
 
 import (
 	"context"
@@ -6,15 +6,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gusrylmubarok/golang-bank-api/util"
+	"github.com/gusrylmubarok/golang-bank-api/internal/database"
+	"github.com/gusrylmubarok/golang-bank-api/internal/utility"
 	"github.com/stretchr/testify/require"
 )
 
 func createRandomAccount(t *testing.T) Account {
 	arg := CreateAccountParams{
-		Owner: util.RandomOwner(),
-		Balance: util.RandomMoney(),
-		Currency: util.RandomCurrency(),
+		Owner: utility.RandomOwner(),
+		Balance: utility.RandomMoney(),
+		Currency: utility.RandomCurrency(),
 	}
 
 	account, err := testQueries.CreateAccount(context.Background(), arg)

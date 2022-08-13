@@ -27,4 +27,4 @@ go.work
 .vscode
 
 # Database Local
-pgdb/
+local_database

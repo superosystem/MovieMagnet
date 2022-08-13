@@ -269,3 +269,24 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+
+## Commands
+- Setup Database Docker
+
+```bash
+  make docker-dev
+```
+
+- Database
+
+```bash
+# Create Database
+  make createdb
+# Delete Database
+  make dropdb
+# Migrate UP
+  make migrateup
+# Migrate DOWN
+  make migratedown
+```
