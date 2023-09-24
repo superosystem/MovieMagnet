@@ -14,19 +14,15 @@ ext.generateVersionCode = { versionName ->
 }
 
 android {
-    namespace 'io.github.gusriil.moviemagnet'
     compileSdk rootProject.ext.compileSdkVersion
-
     defaultConfig {
         applicationId "io.github.gusriil.moviemagnet"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode generateVersionCode(appVersion)
         versionName appVersion
-
         buildConfigField "String", "TMDB_API_KEY", "\"${getProperty("local.properties", "tmdb_api_key") ?: System.getenv("TMDB_API_KEY")}\""
         buildConfigField "String", "TMDB_BASE_URL", "\"http://api.themoviedb.org/\""
-
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
@@ -53,15 +49,12 @@ android {
     }
 
     buildFeatures {
-        buildConfig true
         compose true
     }
-
     composeOptions {
         kotlinCompilerExtensionVersion compose
         kotlinCompilerVersion kotlin_version
     }
-
     kotlinOptions {
         jvmTarget = '1.8'
         freeCompilerArgs += ["-Xopt-in=kotlin.RequiresOptIn", "-Xjvm-default=all"]

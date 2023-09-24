@@ -1,3 +1,50 @@
 <resources>
-    <string name="app_name">MovieMagnet</string>
+    <string name="app_name">Movie Magnet</string>
+    <string name="retry">Retry</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint_movies">Search for movies</string>
+    <string name="search_hint_tv_shows">Search for TV shows</string>
+    <string name="text_popular">Popular</string>
+    <string name="text_highest_rate">Top Rated</string>
+    <string name="text_upcoming">Upcoming</string>
+    <string name="text_trending">Trending</string>
+    <string name="text_now_playing">Now Playing</string>
+    <string name="text_airing_today">Airing today</string>
+    <string name="text_on_the_air">On the air</string>
+    <string name="more_item">More</string>
+    <string name="popular">Popular %s</string>
+    <string name="highest_rate">Top Rated %s</string>
+    <string name="trending">Trending %s</string>
+    <string name="upcoming">Upcoming %s</string>
+    <string name="now_playing">Now Playing %s</string>
+    <string name="on_the_air">On the air %s</string>
+    <string name="airing_today">Airing today %s</string>
+    <string name="summary">Summary</string>
+    <string name="trailers">Trailers</string>
+    <string name="cast">Cast</string>
+    <string name="crew">Crew</string>
+    <string name="biography">Biography</string>
+    <string name="release_date">Release Date: %s</string>
+    <string name="rating">%s/10</string>
+    <string name="born">Born on %s</string>
+    <string name="from">From %s</string>
+    <string name="death">Death in %s</string>
+    <string name="known_as">Also known as %s</string>
+    <string name="transition_search_back" translatable="false">transition_search_back</string>
+
+    <string name="menu_movies">Movies</string>
+    <string name="menu_tv_series">TV Series</string>
+    <string name="menu_setting">Setting</string>
+    <string name="open_nav_drawer">Open navigation drawer</string>
+    <string name="close_nav_drawer">Close navigation drawer</string>
+
+    <string name="failed_loading_msg">Something went wrong</string>
+    <string name="failed_network_msg">No internet connection</string>
+    <string name="text_connectivity">Connected</string>
+    <string name="application_not_found">No application that can handle this link found</string>
+
+    <string name="source_code_github">Source code on Github</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="version">Version</string>
+    <string name="forward">Forward</string>
 </resources>
