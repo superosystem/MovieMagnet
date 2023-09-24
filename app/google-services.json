@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730634534111",
+    "project_id": "movie-magnet-7412b",
+    "storage_bucket": "movie-magnet-7412b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730634534111:android:6d418dc758eff773353d6a",
+        "android_client_info": {
+          "package_name": "io.github.gusriil.moviemagnet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFTU6GgCZdoCkNLymWxy9YcqSpdh4Rqw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
